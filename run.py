@@ -35,31 +35,6 @@ def chatbot():
 # amount=1500 category='Clothes' description='Spent on X' merchant='X'
 
 
-
-# {
-#   "query": "How can I save more money on food?",
-#   "expenses": [
-#     {
-#       "amount": 1200,
-#       "category": "Food",
-#       "description": "Weekly groceries",
-#       "date": "2025-09-15T10:30:00Z"
-#     },
-#     {
-#       "amount": 500,
-#       "category": "Food",
-#       "description": "Dinner at restaurant",
-#       "date": "2025-09-14T20:15:00Z"
-#     },
-#     {
-#       "amount": 3000,
-#       "category": "Shopping",
-#       "description": "New clothes",
-#       "date": "2025-09-10T14:00:00Z"
-#     }
-#   ]
-# }
-
 @app.route('/get-advice', methods = ['POST'])
 def interact_chatbot():
         if request.method == 'POST':
